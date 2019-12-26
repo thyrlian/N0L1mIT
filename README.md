@@ -46,4 +46,6 @@ No Limit - 無疆
 
   To stop and remove unwanted container(s)
   
-  `temp=$(docker ps -a | grep 'downloader' | awk '{ print $1 }'); docker stop $temp &> /dev/null && docker rm $temp &> /dev/null`
+  ```bash
+  temp=$(docker ps -a | grep 'downloader' | awk '{ print $1 }'); docker stop $temp &> /dev/null && docker rm $temp &> /dev/null
+  ```

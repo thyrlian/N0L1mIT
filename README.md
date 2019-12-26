@@ -27,3 +27,17 @@ No Limit - 無疆
   # Attach to the background running container
   docker exec -it downloader /bin/bash
   ```
+
+* Manage
+
+  - To access the admin panel ([aMuleWeb](http://wiki.amule.org/wiki/AMuleWeb)) to control aMule by web interface: `http://<YourIPAddress>:4711/`
+  
+  - Admin panel password: `<ADMIN_PASSWORD>`, which was set when building the Docker image
+  
+  - aMule download directory: `~/.aMule/Incoming`
+  
+  - To download ed2k file: `ed2k "<link>"`
+  
+  - To control aMule by command-line, using [`AMuleCMD`](http://wiki.amule.org/wiki/AMuleCMD).  E.g.: to show download queue - `show DL`
+  
+  - To use [aria2](https://aria2.github.io/) to download: `aria2c '<magnet_link>'`

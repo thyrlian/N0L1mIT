@@ -38,6 +38,6 @@ No Limit - 無疆
   
   - To download ed2k file: `ed2k "<link>"`
   
-  - To control aMule by command-line, using [`AMuleCMD`](http://wiki.amule.org/wiki/AMuleCMD).  E.g.: to show download queue - `show DL`
+  - To control aMule by command-line, using [`aMuleCMD`](http://wiki.amule.org/wiki/AMuleCMD).  E.g.: to show download queue - `show DL`
   
   - To use [aria2](https://aria2.github.io/) to download: `aria2c '<magnet_link>'`

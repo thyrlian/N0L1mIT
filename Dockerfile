@@ -10,3 +10,5 @@ ARG ADMIN_PASSWORD=all-platform-Mule
 RUN amuled; sed -i 's/AcceptExternalConnections=0/AcceptExternalConnections=1/' ~/.aMule/amule.conf && \
     echo -n ${EC_PASSWORD} | md5sum | cut -d ' ' -f 1 | xargs -I {} sed -i "s/ECPassword=/ECPassword={}/" ~/.aMule/amule.conf && \
     amuleweb --write-config --password=${EC_PASSWORD} --admin-pass=${ADMIN_PASSWORD}
+
+ENTRYPOINT ["amuled"]

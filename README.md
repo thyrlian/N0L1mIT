@@ -41,3 +41,9 @@ No Limit - 無疆
   - To control aMule by command-line, using [`aMuleCMD`](http://wiki.amule.org/wiki/AMuleCMD).  E.g.: to show download queue - `show DL`
   
   - To use [aria2](https://aria2.github.io/) to download: `aria2c '<magnet_link>'`
+
+* Done
+
+To stop and remove unwanted container(s)
+
+`temp=$(docker ps -a | grep 'downloader' | awk '{ print $1 }'); docker stop $temp &> /dev/null && docker rm $temp &> /dev/null`

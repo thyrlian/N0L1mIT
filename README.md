@@ -17,3 +17,13 @@ No Limit - 無疆
   ```
 
 * Play
+
+  ```bash
+  # Run a container with interactive shell
+  docker run -it -p 4711:4711 --name downloader downloader /bin/bash
+  
+  # Run a container in the background
+  docker run -d -p 4711:4711 --name downloader downloader
+  # Attach to the background running container
+  docker exec -it downloader /bin/bash
+  ```

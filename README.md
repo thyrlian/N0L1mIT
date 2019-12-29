@@ -19,6 +19,8 @@ This Docker image contains [aMule](http://www.amule.org/) and [aria2](https://ar
   # Build with arguments, set your own passwords instead of the default ones
   docker build --build-arg EC_PASSWORD=<YourECPassword> --build-arg ADMIN_PASSWORD=<YourAdminPassword> -t downloader .
   ```
+  
+  Default passwords are [here](https://github.com/thyrlian/N0L1mIT/blob/master/Dockerfile#L12-L13)
 
 * Play
 

@@ -7,6 +7,8 @@ RUN apt-get update -y && apt-get upgrade -y && \
 RUN apt-get install -y --no-install-recommends amule amule-daemon amule-utils && \
     apt-get install -y --no-install-recommends aria2
 
+ADD .profile /home/
+
 EXPOSE 4711
 
 ARG EC_PASSWORD=Down10adEveryth!ng

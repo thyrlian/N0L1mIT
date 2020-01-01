@@ -1,6 +1,6 @@
 obfuscate() {
   if [ $# -lt 1 ]; then
-    echo "Usage: $0 [file|directory ...]"
+    echo "Usage: obfuscate [file|directory ...]"
     return 1
   else
     error_flag=false

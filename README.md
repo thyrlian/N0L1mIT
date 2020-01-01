@@ -34,6 +34,10 @@ This Docker image contains [aMule](http://www.amule.org/) and [aria2](https://ar
   docker exec -it downloader /bin/bash
   ```
 
+* Trick
+
+  A [dotfile](https://github.com/thyrlian/N0L1mIT/blob/master/.profile) has been added to the Docker image, which contains a very nice [`obfuscate`](https://github.com/thyrlian/N0L1mIT/blob/master/.profile#L1) function.  After sourcing it, you can use it easily to pack the downloaded file(s) together with a dummy file, which would change the file's MD5 signature ;)
+
 * Manage
 
   - To access the admin panel ([aMuleWeb](http://wiki.amule.org/wiki/AMuleWeb)) to control aMule by web interface: `http://<YourIPAddress>:4711/`
